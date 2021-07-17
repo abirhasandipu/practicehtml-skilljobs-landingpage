@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>SkillJobs Clone</title>
+	</head>
+	<body>
+		<nav>
+			<img class="logo" src="img/logo.png" alt="logo" />
+
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li>
+					<a href="#">Job Seeker</a>
+				</li>
+				<li>
+					<a href="#">Employer</a>
+				</li>
+				<li><a href="#">Training</a></li>
+				<li><a href="#">Blog</a></li>
+				<li>
+					<a href="#">Solution</a>
+				</li>
+
+				<li><a class="post_job" href="#">Post A Job</a></li>
+			</ul>
+		</nav>
+
+		<section class="hero">
+			<img class="hero-img" src="img/sl1.png" alt="" />
+			<form action="">
+				<input id="keyword" type="text" placeholder="Keyword" />
+				<select name="location" id="">
+					<option value="all-location">All Locations</option>
+					<option selected value="bangladesh">Bangladesh</option>
+				</select>
+				<select name="experience" id="">
+					<option selected value="">Experience</option>
+					<option value="">Less than 1 year</option>
+					<option value="">1 year - 3 years</option>
+					<option value="">3 year - 6 years</option>
+					<option value="">6 year - 10 years</option>
+					<option value="">10 year - plus</option>
+				</select>
+				<input class="submit-btn" type="submit" value="Search" />
+			</form>
+		</section>
+
+		<a
+			style="color: #fff; font-size: 10px; text-decoration: none"
+			href="http://skill.jobs"
+			target="_blank"
+			>This is a practice project. Here is the ORIGINAL SITE</a
+		>
+		<section class="latest-jobs">
+			<h1 class="lj-head">Latest Jobs</h1>
+			<h3 class="lj-sub-head">
+				View Thousands of Latest Full Time or Part Time Job Offers listed by Top
+				Companies
+			</h3>
+			<div class="job-table">
+				<div class="job-row">
+					<div class="job">
+						<img src="img/job/image.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/2.jpg" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/3.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/4.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+				</div>
+				<!-- 2nd row -->
+				<div class="job-row">
+					<div class="job">
+						<img src="img/job/5.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/6.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/2.jpg" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/3.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+				</div>
+				<!-- 3rd row -->
+				<div class="job-row">
+					<div class="job">
+						<img src="img/job/4.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/image.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/6.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/5.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+				</div>
+				<!-- 4th row -->
+				<div class="job-row">
+					<div class="job">
+						<img src="img/job/2.jpg" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/image.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/3.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+					<div class="job">
+						<img src="img/job/6.png" alt="" />
+						<div class="job-desc">
+							<p>Augnitive</p>
+							<a href="">Software Engineer</a>
+							<a href="">Junior Software Engineer</a>
+							<a id="more" href="">>>More...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="view-jobs-btn" href="">View 100+ Jobs</a>
+		</section>
+		<!-- Government Jobs -->
+		<section class="government-jobs">
+			<div class="govt-jobs-head">
+				<h1 class="gj-head">Latest Government Jobs</h1>
+				<h3 class="gj-sub-head">
+					Find all information about government jobs in Bangladesh
+				</h3>
+			</div>
+			<div class="govt-jobs-row">
+				<!-- 1 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/govtjobs/2021-02-24_101628-300x211.png"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#"
+						>বাখরবাদ গ্যাস ডিস্ট্রিবিউশন কোম্পানি লিমিটেড এ নিয়োগ</a
+					>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+				<!-- 2 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/govtjobs/2021-02-20_141146-300x195.png"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#"
+						>বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো তে নিয়োগ</a
+					>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+				<!-- 3 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/govtjobs/2021-02-08_141553-300x129.jpg"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#"
+						>বাখরবাদ গ্যাস ডিস্ট্রিবিউশন কোম্পানি লিমিটেড এ নিয়োগ</a
+					>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+			</div>
+			<a class="all-govtjobs-btn" href="#">All Govt. Jobs</a>
+		</section>
+
+		<!-- Employability Skills Test -->
+		<section class="skill-test">
+			<div class="skill-test-head">
+				<h1 class="st-head">
+					Employability Skills Test. Boost Your Career Opportunites!
+				</h1>
+				<h3 class="st-sub-head">Why Employability Skills Test Important?</h3>
+			</div>
+			<!-- skill test content -->
+			<div class="st-content">
+				<div class="st-img"><img src="img/st/info-1.png" alt="" /></div>
+				<div class="desc">
+					<p>
+						Getting employed is not just about having a single work skill. It
+						requires you to get involved with a lot of people, analyzing
+						critical situations, solving problems, knowing and acting according
+						to the right etiquette, etc. So to become employable, one needs to
+						address a set of skills that we know as employability skills.
+						Employability test will help you to identify the skills that need
+						improvement and grow as an employable candidate that the employers
+						seek today. No matter you are a job seeker or already working for an
+						organization, an employability test will help you to get the right
+						directions that you need to get career success.
+					</p>
+					<div class="st-desc-img-btn">
+						<img src="img/st/Play-Fill-Loader.gif" alt="" />
+						<a class="st-btn" href="">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="resume-gif">
+			<img src="img/resume.gif" alt="" />
+		</section>
+
+		<!-- Career Solutions -->
+		<section class="career-solutions">
+			<h1 class="head-cs">Career Solutions</h1>
+			<!-- 1 -->
+			<div class="cs-row">
+				<div class="cs-column">
+					<div class="cs-img">
+						<img src="img/cs/it1.png" alt="" />
+					</div>
+
+					<h3 class="cs-desc-head">internship</h3>
+					<p class="cs-desc">
+						Internship portal is the Bangladesh largest internship
+					</p>
+				</div>
+
+				<!-- 2 -->
+
+				<div class="cs-column">
+					<div class="cs-img">
+						<img src="img/cs/el1.png" alt="" />
+					</div>
+
+					<h3 class="cs-desc-head">e - learning</h3>
+					<p class="cs-desc">Start shaping your future learning online</p>
+				</div>
+
+				<!-- 3 -->
+
+				<div class="cs-column">
+					<div class="cs-img">
+						<img src="img/cs/cd1.png" alt="" />
+					</div>
+					<h3 class="cs-desc-head">career doctor</h3>
+					<p class="cs-desc">
+						CV builder that is so easy to use and relevant Things to Get Job
+					</p>
+				</div>
+
+				<!-- 4 -->
+				<div class="cs-column">
+					<div class="cs-img">
+						<img src="img/cs/ap1.png" alt="" />
+					</div>
+					<h3 class="cs-desc-head">apprentice</h3>
+					<p class="cs-desc">
+						Apprenticeship is a combination of on-the-job training
+					</p>
+				</div>
+
+				<!-- 5 -->
+
+				<div class="cs-column">
+					<div class="cs-img">
+						<img src="img/cs/el1.png" alt="" />
+					</div>
+
+					<h3 class="cs-desc-head">employability</h3>
+					<p class="cs-desc">Find what you love and love what you do</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Latest Career Articles -->
+		<section class="government-jobs">
+			<div class="govt-jobs-head">
+				<h1 class="gj-head">Latest Career Articles</h1>
+				<h3 class="gj-sub-head">
+					Read Articles about Career advice, resume writing tips and picking
+					your perfect Job
+				</h3>
+			</div>
+			<div class="govt-jobs-row">
+				<!-- 1 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/lca/blog-Banner-2-01-scaled.jpg"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#"
+						>Virtual effect on the job market, skills and its best.</a
+					>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+				<!-- 2 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/lca/blog-Banner-Copy-01-scaled.jpg"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#">Jobs in Bangladesh </a>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+				<!-- 3 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/lca/blog-Banner-Copy-01-2-scaled.jpg"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#"
+						>Machine Learning Jobs in Bangladesh
+					</a>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+			</div>
+			<br />
+			<div class="govt-jobs-row">
+				<!-- 4 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/lca/blog-Banner-Copy-01-scaled (1).jpg"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#"
+						>Top ten skills required for getting a job in future!
+					</a>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+				<!-- 5 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/lca/blog-Banner-2-01-1-scaled.jpg"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#"
+						>পরিবর্তিত সময়ের জন্য কর্মীরা কীভাবে �..</a
+					>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+				<!-- 6 -->
+				<div class="govt-job-col">
+					<div class="gj-img">
+						<img
+							class="govt-job-img"
+							src="img/lca/blog-Banner-Copy-01-scaled (2).jpg"
+							alt=""
+						/>
+					</div>
+					<a class="govt-job-link" href="#">LOOK FOR CAREER NOT FOR A JOB </a>
+					<a class="govt-job-btn" href="#">Read More</a>
+				</div>
+			</div>
+			<a class="all-govtjobs-btn" href="#">All Articles</a>
+		</section>
+
+		<!-- We've Helped -->
+		<section class="helped-section">
+			<div class="help-head">
+				<h1 class="help-h1">
+					We've Helped Thousand's of People With their Careers
+				</h1>
+				<p class="help-p">
+					We assist people all over the world hire and get hired, Register now
+					and be found by employers
+				</p>
+			</div>
+			<div class="help-desc">
+				<div class="desc-img">
+					<img src="img/career2.png" alt="" />
+				</div>
+				<p class="help-desc">
+					We are a leading online career and recruitment website with cutting
+					edge technology. Our Job Board provides best suited profiles to
+					employers and relevant jobs to jobseekers across industry verticals,
+					experience levels and geographies Companies of all sizes hire the best
+					talent with our Job Board, Contact us for more details.
+				</p>
+			</div>
+		</section>
+
+		<!-- Job Alert -->
+		<section class="job-alert">
+			<p class="alert-desc">
+				Get daily emails in your inbox with jobs that match your industry or
+				sector when an opportunity opens up Create a job alert for your jobs and
+				get notified by email.
+			</p>
+			<div class="jobalert-form">
+				<form action="">
+					<input
+						class="jobalert-input"
+						type="email"
+						placeholder="Enter email id"
+					/>
+					<input
+						class="jobalert-btn"
+						type="submit"
+						value="Create a Job Alert"
+					/>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<section class="footer">
+			<div class="footer-col1">
+				<img src="/img/logo.png" alt="" />
+				<p class="copyright-text">
+					© 2021 <a href="#">Job Site in Bangladesh - Skill Jobs</a>
+				</p>
+			</div>
+			<div class="footer-col2">
+				<h4>Job Seeker</h4>
+				<ul class="footer-jobseeker-column-links">
+					<li><a href="">Register Now</a></li>
+					<li><a href="">Search Jobs</a></li>
+					<li><a href="">Login</a></li>
+					<li><a href="">View Applications</a></li>
+					<li><a href="">Job Alerts</a></li>
+					<li><a href="">Post Resume</a></li>
+				</ul>
+			</div>
+			<div class="footer-col3">
+				<h4>Employer</h4>
+				<ul class="footer-jobseeker-column-links">
+					<li><a href="">Post a Job</a></li>
+					<li><a href="">Search Resume</a></li>
+					<li><a href="">Login</a></li>
+					<li><a href="">Register Now</a></li>
+					<li><a href="">Resume Alerts</a></li>
+					<li><a href="">Applicant Tracking</a></li>
+				</ul>
+			</div>
+			<div class="footer-col4">
+				<h4>Information</h4>
+				<ul class="footer-jobseeker-column-links">
+					<li><a href="">About Us</a></li>
+					<li><a href="">Terms & Conditions</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Resources</a></li>
+					<li><a href="">Sitemap</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-col5">
+				<h4>Follow</h4>
+
+				<h4>Mobile Site</h4>
+				<h4>Download Mobile App</h4>
+			</div>
+		</section>
+	</body>
+</html>

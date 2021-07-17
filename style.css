@@ -1,0 +1,661 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: Montserrat, Open Sans, sans-serif;
+	background-color: #eeeeee;
+}
+
+/* ======== Start Nav Menu ============ */
+nav {
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 10vh;
+	background-color: #ddeaf5;
+}
+
+nav .logo {
+	height: 72px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li a {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 7px 20px;
+	margin: 6px 0 0;
+	text-decoration: none;
+	color: #0c1e53;
+	margin-right: 10px;
+	white-space: nowrap; /* this prevents the line to be broken */
+}
+
+nav a.post_job {
+	border: 1px solid;
+	padding: 12px 25px 12px 25px;
+}
+
+/* Media */
+
+@media only screen and (max-width: 1350px) {
+	nav {
+		justify-content: left;
+	}
+	nav .logo {
+		margin-left: 5rem;
+		max-height: 50px;
+	}
+	nav ul {
+		margin-left: 1rem;
+	}
+
+	nav ul li a {
+		margin: 0px;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	nav ul {
+		display: none;
+	}
+}
+
+/* ======== End Nav Menu ============ */
+
+/* ======= Start Hero Section =========== */
+
+.hero {
+	margin-bottom: 10px;
+}
+.hero-img {
+	height: 40vh;
+	width: 100vw;
+	object-fit: cover;
+}
+
+form {
+	margin-top: -14vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+#keyword {
+	height: 3.2rem;
+	width: 16rem;
+	padding-left: 1rem;
+	border: none;
+}
+
+select {
+	height: 3.2rem;
+	width: 15rem;
+	padding-left: 1rem;
+	background-color: #fff;
+	border: none;
+	border-left: 0.01px solid;
+	color: rgb(77, 77, 77);
+}
+
+.submit-btn {
+	height: 3.2rem;
+	width: 10rem;
+	border: none;
+	background-color: #ec1c24;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+@-moz-document url-prefix() {
+	input,
+	select,
+	.submit-btn {
+		font-size: 16px;
+	}
+}
+
+/* Media Query */
+@media only screen and (max-width: 1350px) {
+	form {
+		margin-top: -16vh;
+	}
+
+	#keyword {
+		height: 2.8rem;
+		width: 12rem;
+	}
+
+	select {
+		height: 2.8rem;
+		width: 10rem;
+	}
+
+	.submit-btn {
+		height: 2.8rem;
+		width: 8rem;
+	}
+}
+
+/* ======= End Hero Section =========== */
+
+/* ======= Start Latest-Jobs Section =========== */
+
+.latest-jobs {
+	margin-top: 60px;
+	margin-left: 15%;
+	margin-bottom: 20px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 70vw;
+}
+
+.lj-head {
+	color: #0b54a4;
+	font-size: 2.5rem;
+}
+@-moz-document url-prefix() {
+	.lj-head {
+		font-size: 2.5rem;
+	}
+	.lj-sub-head {
+		font-size: 1.2rem;
+	}
+}
+.lj-sub-head {
+	color: #0793c6;
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.job-table {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.job-row {
+	display: flex;
+	width: 100%;
+}
+
+.job {
+	display: flex;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-left: 12px;
+	height: 8rem;
+	width: 30rem;
+	border: solid 1px #cccccc;
+}
+.job img {
+	max-height: 58px;
+	width: 58px;
+}
+.job-desc {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	line-height: 1.2em;
+	padding-left: 10px;
+	color: #2f64a3;
+	font-size: 12px;
+}
+
+.job-desc p {
+	font-size: 14px;
+}
+.job-desc a {
+	margin-top: 5px;
+	text-decoration: none;
+	color: #666;
+}
+
+#more {
+	color: #0066ff;
+}
+
+.view-jobs-btn {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0b54a4;
+	color: white;
+	text-decoration: none;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	border-color: blue;
+	margin-bottom: 40px;
+}
+
+/* ======= End Latest-Jobs Section =========== */
+
+/*=========== Start Latest Government Jobs =========================== */
+
+.government-jobs {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70vw; */
+	margin-top: 60px;
+	margin-left: 15%;
+	margin-bottom: 20px;
+	/* background-color: #fff; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 70vw;
+}
+
+.govt-jobs-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gj-head {
+	color: #0b54a4;
+	font-size: 2.5rem;
+}
+@-moz-document url-prefix() {
+	.gj-head {
+		font-size: 2.5rem;
+	}
+	.gj-sub-head {
+		font-size: 1.2rem;
+	}
+}
+.gj-sub-head {
+	color: #0793c6;
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.govt-jobs-row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.govt-job-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.gj-img {
+	height: 210px;
+	width: 330px;
+	object-fit: cover;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.govt-job-img {
+	height: 210px;
+	width: 330px;
+	object-fit: cover;
+}
+.govt-job-img:hover {
+	opacity: 0.7;
+}
+
+.govt-job-link {
+	box-sizing: border-box;
+	text-align: center;
+	display: block;
+	margin-block-start: 15px;
+	margin-block-end: 15px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.govt-job-link:hover {
+	text-decoration: underline;
+}
+
+.govt-job-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	color: #ec407a;
+	text-decoration: none;
+	height: 35px;
+	width: 125px;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 30px;
+	border: #ec407a solid 1px;
+}
+
+.all-govtjobs-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0b54a4;
+	color: white;
+	text-decoration: none;
+	height: 45px;
+	width: 200px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	border: #ec407a solid 1px;
+	margin-bottom: 20px;
+}
+/*=========== End Latest Government Jobs =========================== */
+
+/*=========== Start Skill Test =========================== */
+.skill-test {
+	margin-left: 20%;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60vw;
+}
+
+.skill-test-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.st-head {
+	color: #0b54a4;
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+}
+.st-sub-head {
+	color: #6e6e6e;
+	font-size: 1rem;
+	font-weight: 500;
+	margin-top: 1rem;
+	margin-bottom: 1.2rem;
+	text-align: center;
+}
+
+.st-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.st-img {
+	max-width: 100%;
+	height: 280px;
+	padding: 5px;
+	background-color: #fff;
+	border: #fff solid 2px;
+	border-radius: 5px;
+}
+.st-img img {
+	object-position: center;
+	object-fit: cover;
+	height: 280px;
+}
+.st-img img:hover {
+	opacity: 0.7;
+}
+.desc {
+	margin-top: 20px;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.st-desc-img-btn {
+	margin-top: 20px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.desc img {
+	background-color: #fff;
+	width: 100px;
+	border: #fff solid 5px;
+	border-radius: 5px;
+}
+.st-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ec407a;
+	color: #fff;
+	text-decoration: none;
+	height: 35px;
+	width: 110px;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 30px;
+	border: #ec407a solid 1px;
+}
+
+/*=========== End Skill Test =========================== */
+
+/* ========Resume Gif============= */
+.resume-gif {
+	width: 85vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: 8%;
+}
+.resume-gif img {
+	width: 85%;
+}
+
+/*=========== Start Career Solutions =========================== */
+
+.career-solutions {
+	margin-left: 20%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 60vw;
+}
+
+.head-cs {
+	color: #0b54a4;
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.cs-row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+.cs-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cs-img {
+	height: 200px;
+	width: 200px;
+}
+.cs-img img {
+	height: 200px;
+	width: 200px;
+}
+
+.cs-desc-head {
+	color: #0b54a4;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 25px;
+	text-align: center;
+	color: #337ab7;
+}
+
+.cs-desc {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 14px;
+	color: gray;
+}
+
+/*=========== End Career Solutions =========================== */
+
+/*=========== Start Latest Career Article =========================== */
+
+/* This is the same as Latest Govt Jobs Section */
+
+/*=========== End Latest Career Article =========================== */
+
+/*=========== Start We've Helped =========================== */
+
+.helped-section {
+	margin-left: 20%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 60vw;
+}
+.help-h1 {
+	color: #0b54a4;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.help-p {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 16px;
+	color: #3f3f3f;
+}
+
+.help-desc {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.desc-img {
+	width: 250px;
+	height: 100%;
+	background-color: #fff;
+	border: 5px solid #fff;
+	border-radius: 5px;
+}
+
+.desc-img img {
+	width: 250px;
+	height: 100%;
+}
+
+.help-desc {
+	margin-left: 15px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/*=========== End We've Helped =========================== */
+
+/*=========== Start Job alert =========================== */
+
+.job-alert {
+	margin-left: 13%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 70vw;
+	background-color: #fff;
+	padding: 0px 30px;
+	height: 100px;
+}
+
+.job-alert p {
+	font-size: 14px;
+	color: #575757;
+}
+
+.jobalert-form {
+	margin-top: 200px;
+	margin-left: 60px;
+}
+
+.jobalert-input {
+	width: 250px;
+	height: 35px;
+	border: 0.5px solid gray;
+	padding: 0px 5px;
+}
+.jobalert-btn {
+	background-color: #ec407a;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+}
+
+/*=========== End Job alert =========================== */
+
+/* =========== Start Footer ============== */
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	padding-left: 15%;
+	padding-right: 20%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+.footer-jobseeker-column-links {
+	list-style: none;
+	margin-top: 5px;
+}
+
+.footer-jobseeker-column-links a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.footer-jobseeker-column-links li {
+	margin-top: 10px;
+}
+
+/* =========== End Footer ============== */
